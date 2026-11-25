@@ -1,9 +1,5 @@
 grammar LumiLang;
 
-@header {
-package lumilang.antlr;
-}
-
 program
     : statement* EOF
     ;
