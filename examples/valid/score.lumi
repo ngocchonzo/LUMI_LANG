@@ -1,0 +1,16 @@
+let score = 70;
+let bonus = 15;
+
+set score = score + bonus;
+say("Final score:");
+say(score);
+
+if (score >= 80) {
+    say("Excellent!");
+} else {
+    say("Keep learning!");
+}
+
+repeat 3 {
+    say("Learning LumiLang");
+}

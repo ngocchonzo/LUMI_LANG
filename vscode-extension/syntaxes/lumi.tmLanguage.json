@@ -1,0 +1,38 @@
+{
+  "scopeName": "source.lumilang",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#constants" },
+    { "include": "#numbers" },
+    { "include": "#operators" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [{ "name": "comment.line.double-slash.lumilang", "match": "//.*$" }]
+    },
+    "strings": {
+      "name": "string.quoted.double.lumilang",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [{ "name": "constant.character.escape.lumilang", "match": "\\\\." }]
+    },
+    "keywords": {
+      "name": "keyword.control.lumilang",
+      "match": "\\b(let|set|say|if|else|repeat)\\b"
+    },
+    "constants": {
+      "name": "constant.language.lumilang",
+      "match": "\\b(true|false)\\b"
+    },
+    "numbers": {
+      "name": "constant.numeric.lumilang",
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
+    },
+    "operators": {
+      "name": "keyword.operator.lumilang",
+      "match": "(==|!=|>=|<=|&&|\\|\\||[=+*/<>!-])"
+    }
+  }
+}
